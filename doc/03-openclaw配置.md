@@ -1,0 +1,36 @@
+﻿# 3. openclaw配置
+
+这里面我们需要先打开onboard，然后我们配置模型，先让open claw可以完成我们的基本对话。
+
+![img](https://ccnpfm0xlkhu.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTkyNWRjMWQ2ZmFkNGIwZDgwNmZlYjc2YmFiNTVhYjVfdFMwSklpYmFSaVBlNmo3Mk1peklwSzNFakhWWXNjbm1fVG9rZW46TTNvQWIwaFU5b1FSY0x4b3pDbGN0STM5bjNlXzE3NzIzNzYxOTQ6MTc3MjM3OTc5NF9WNA)
+
+这里大家跟着我的选择就好~
+
+![img](https://ccnpfm0xlkhu.feishu.cn/space/api/box/stream/download/asynccode/?code=OTM0Y2Q2OTVkZmE5NGQ2ZGQ1ZmQyN2Q5Mjk3N2E5MmNfd0l4NXZmRkJXUEUyN2p1OVBlREhtNmsyTWNYRWw5UmpfVG9rZW46QjlEMGJ0YThMb09vaWJ4SVBRaWNtZlpYbnpiXzE3NzIzNzYxOTQ6MTc3MjM3OTc5NF9WNA)
+
+到这里我们就需要把2.3等待时找到的apikey导入就好~
+
+![img](https://ccnpfm0xlkhu.feishu.cn/space/api/box/stream/download/asynccode/?code=ZmJhYmZlNDkyYzg0OWQ1Y2ZlNWJhZWM2Njc4ZmQ3OTZfWTAxZlhockhJTGlBQVB3YVNrdm05U3FFTkx5NVJnQ3FfVG9rZW46SmRPU2JlU1JRb0Y0Sk54QzFJdWNHVFJLbjJiXzE3NzIzNzYxOTQ6MTc3MjM3OTc5NF9WNA)
+
+配好key后我们选择飞书
+
+![img](https://ccnpfm0xlkhu.feishu.cn/space/api/box/stream/download/asynccode/?code=NzUzMzI1MmI2MWM4NTczZjQ3ZThiZGY3YTA2OTgwZTFfelNad0VuWWZmZmtFekxWYlZVR2duU0RVR3ZPU3pRd2xfVG9rZW46UHVIbmJ0VkZqb0RsY214RzZ6NmM2ZHhtbkdjXzE3NzIzNzYxOTQ6MTc3MjM3OTc5NF9WNA)
+
+![img](https://ccnpfm0xlkhu.feishu.cn/space/api/box/stream/download/asynccode/?code=ZGRmNTZmOGQ1OTJhY2IxOTdiYjFiYzI4N2MzYjFlZDVfNnF3VXA5RmtrbWxjOGpqOEYwM0c1MXBjWVJBUUZkUk1fVG9rZW46T2N4c2JaOFpob3dRY254N3JiemMwUWFibkZkXzE3NzIzNzYxOTQ6MTc3MjM3OTc5NF9WNA)
+
+到这里就需要切换到飞书的配置了
+
+![img](https://ccnpfm0xlkhu.feishu.cn/space/api/box/stream/download/asynccode/?code=YWVmYTIyZDI0MWE4NDc3MzJhNDkwZmFhNWE2ZDhkNmNfZmhlbVFpSVVMak5IM0FJU1lYOFR4ZVlabkQzd0xUdVJfVG9rZW46THNiSWJTTDBHbzQ2UTV4Z2dNdGNITndCbjJlXzE3NzIzNzYxOTQ6MTc3MjM3OTc5NF9WNA)
+
+## 如何更新？
+
+在ubuntu输入下面命令即可~
+
+```Plain
+openclaw update
+```
+
+ok搞定~
+
+![img](https://ccnpfm0xlkhu.feishu.cn/space/api/box/stream/download/asynccode/?code=ZWY2NmY4ZjhhZDBiODQwMGM2YzBmNzgxMWY2MjAxNjJfODJDd3Jha1JOZTN6SnRtSkpBeGl1SDkxU0xmVE50RHpfVG9rZW46QW1JR2JMWGhub2o1eFB4RThNbWMycjN0bmhMXzE3NzIzNzYxOTQ6MTc3MjM3OTc5NF9WNA)
+
