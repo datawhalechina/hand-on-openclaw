@@ -1,0 +1,74 @@
+site_name: OpenClaw Guide
+site_description: OpenClaw 中文教程与实践手册
+repo_name: Bald0Wang/hand-on-openclaw
+repo_url: https://github.com/Bald0Wang/hand-on-openclaw
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - 首页: index.md
+  - 待办清单: todo.md
+  - 安装部署:
+      - 安装概览: install/overview.md
+      - macOS 安装: install/macos.md
+      - Windows 安装: install/windows.md
+      - Linux 安装: install/linux.md
+      - 云端部署: install/cloud.md
+      - 故障排查: install/troubleshoot.md
+  - 基础使用:
+      - 第一次对话: basic/first-chat.md
+      - 选择模型:
+          - 总览: basic/choose-model.md
+          - 多模型与 Provider 配置: basic/models/multi-provider.md
+          - 火山方舟（豆包）接入: basic/models/volcengine-doubao.md
+          - 火山 Coding Plan: basic/models/volcengine-coding-plan.md
+          - 阿里云 Coding Plan: basic/models/aliyun-coding-plan.md
+          - LM Studio 本地模型: basic/models/local-lmstudio.md
+          - Cherry Studio + Step: basic/models/cherry-step.md
+          - 阿里云教程写作模板: basic/models/aliyun-coding-plan-writing.md
+      - 聊天渠道:
+          - Telegram: basic/channels/telegram.md
+          - 飞书: basic/channels/feishu.md
+          - 钉钉: basic/channels/dingtalk.md
+          - 企业微信: basic/channels/wechat-work.md
+          - Discord: basic/channels/discord.md
+      - Workspace: basic/workspace.md
+      - Memory: basic/memory.md
+  - Skills:
+      - 什么是 Skills: skills/what-are-skills.md
+      - 安装 Skills: skills/install-skills.md
+      - 创建 Skill: skills/create-skill.md
+      - 发布 Skill: skills/publish-skill.md
+      - Skill 示例: skills/skill-examples.md
+  - 自动化工作流:
+      - Cron: automation/cron.md
+      - Heartbeat: automation/heartbeat.md
+      - Webhook: automation/webhook.md
+  - 源码解析:
+      - 整体架构: deep-dive/architecture.md
+      - 源码走读: deep-dive/source-walkthrough.md
+      - 消息流: deep-dive/message-flow.md
+      - 从源码构建: deep-dive/build-from-source.md
+  - 实战项目:
+      - 个人助手: projects/personal-assistant.md
+      - 团队机器人: projects/team-bot.md
+      - 自动化工作流案例: projects/auto-workflow.md

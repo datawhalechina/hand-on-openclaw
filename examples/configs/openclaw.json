@@ -1,0 +1,10 @@
+{
+  "workspace": "./examples/configs/workspace",
+  "model": {
+    "provider": "openai-compatible",
+    "name": "deepseek-chat",
+    "baseUrl": "https://api.example.com/v1"
+  },
+  "channels": [],
+  "automation": []
+}
