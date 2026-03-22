@@ -1,97 +1,155 @@
 # hand-on-openclaw
+### 《OpenClaw 中文安装与使用手册》
 
-### OpenClaw 中文教程与实践手册
-
-从安装部署到多模型接入、渠道联动、Skills 与自动化工作流，帮助中文用户用可复现步骤搭建自己的 OpenClaw 系统。
+从安装部署到初始化配置、ClawHub、联网、自动化与常用应用场景，帮助中文用户一步一步把 OpenClaw 真正用起来。
 
 ---
 
 ## 项目介绍
 
-`hand-on-openclaw` 是一个面向中文用户的 OpenClaw 教程仓库。  
-项目目标不是“概念速览”，而是“可以照着做并跑通”的实战文档。
+很多人第一次接触 OpenClaw，最容易卡住的不是“它能做什么”，而是：
 
-当前文档采用 MkDocs 组织，覆盖以下主线：
+1. 不知道该怎么装
+2. 不知道 API 应该怎么配
+3. 不知道本地、WSL、Docker、第三方平台到底怎么选
+4. 装好之后，不知道从哪里开始真正把它用起来
 
-- 安装部署：Windows / macOS / Linux / 云端
-- 基础使用：首次对话、模型选择、渠道接入、Workspace、Memory
-- Skills：安装、创建、发布、示例
-- 自动化工作流：Cron / Heartbeat / Webhook
-- 源码解析与实战项目
+这个仓库就是为这些问题准备的。
+
+它不是一份只讲概念的速览，而是一套偏实操、偏中文语境、偏普通用户上手路径的教程集合。你可以把它理解成一份 OpenClaw 中文电子手册雏形。
+
+总入口：
+
+- [介绍](./doc/介绍.md)
+
+---
 
 ## 快速开始
 
-### 在线阅读
+如果你是第一次接触 OpenClaw，建议按下面顺序阅读：
 
-- 文档入口：[docs/index.md](docs/index.md)
-- MkDocs 导航配置：[mkdocs.yml](mkdocs.yml)
+1. 先看 [介绍](./doc/介绍.md)
+2. 安装路线优先选：
+   - [Windows-WSL-飞书群聊入门](./doc/怎么安装openclaw/Windows-WSL-飞书群聊入门.md)
+   - 或 [clawX安装openclaw（qq、飞书、企微）](./doc/怎么安装openclaw/clawX安装openclaw（qq、飞书、企微）.md)
+3. 安装完成后先看 [OpenClaw 必做的初始化配置](./doc/怎么使用openclaw/openclaw必做的初始化配置.md)
+4. 再继续看 [ClawHub 指南](./doc/怎么使用openclaw/clawhub指南.md) 和 [应用场景目录](./doc/怎么使用openclaw/15个OpenClaw应用场景)
 
-### 本地阅读
-
-```bash
-pip install -r requirements.txt
-mkdocs serve
-```
-
-启动后访问本地地址（默认 `http://127.0.0.1:8000`）。
+---
 
 ## 你将收获什么
 
-- 用最小闭环方式完成 OpenClaw 安装、初始化与验证
-- 掌握国内常见模型与 Provider 的接入方法
-- 能把 OpenClaw 连接到飞书、钉钉、Telegram、Discord 等渠道
-- 理解 Workspace / Memory / Skills 在实际项目中的使用边界
-- 具备从“会用”到“可维护、可扩展”的文档化交付能力
+- 理解 OpenClaw 到底适合拿来做什么，而不只是把它当成另一个聊天工具
+- 了解 Windows、WSL、Docker、第三方平台几种典型安装路线的差异
+- 学会把常见模型和 API 接入 OpenClaw
+- 能把 OpenClaw 接到飞书、QQ、企业微信等 IM 平台
+- 理解 `SOUL.md`、`IDENTITY.md`、`USER.md`、ClawHub、Skills、工作区这些概念在实际使用里的作用
+- 通过一组应用场景看懂 OpenClaw 的“连接器 / 胶水层”逻辑
 
-## 内容地图
+---
 
-| 模块 | 关键内容 | 路径 |
-| --- | --- | --- |
-| 安装部署 | 系统安装、云端部署、排障 | [docs/install/](docs/install/) |
-| 基础使用 | 首次对话、模型选择、渠道接入 | [docs/basic/](docs/basic/) |
-| Skills | 安装、创建、发布、示例 | [docs/skills/](docs/skills/) |
-| 自动化 | 定时任务、事件触发、健康检查 | [docs/automation/](docs/automation/) |
-| 源码解析 | 架构、消息流、源码构建 | [docs/deep-dive/](docs/deep-dive/) |
-| 实战项目 | 个人助手、团队机器人、自动化案例 | [docs/projects/](docs/projects/) |
+## 内容导航
 
-## 学习顺序建议
+### 安装 OpenClaw
 
-1. 先完成 `install` + `basic/first-chat`，确保环境可用。
-2. 再学习 `basic/choose-model` 与 `basic/channels`，打通模型和消息入口。
-3. 最后进入 `skills` 与 `automation`，提升可用性和长期运行能力。
+下面这张表把当前安装教程按几个维度做了标注：
 
-对应直达链接：
+- `API配置`：是否包含模型或平台 API 配置
+- `环境`：偏本地、云，还是两者都能参考
+- `安全性`：仅作为上手层面的相对建议，不代表严格安全审计结论
+- `IM接入`：是否包含 QQ / 飞书 / 企业微信等接入内容
 
-- [安装部署](docs/install/overview.md)
-- [第一次对话](docs/basic/first-chat.md)
-- [选择模型](docs/basic/choose-model.md)
-- [聊天渠道](docs/basic/channels/feishu.md)
-- [Skills](docs/skills/what-are-skills.md)
-- [自动化工作流](docs/automation/cron.md)
+| 教程 | API配置 | 环境 | 安全性 | IM接入 |
+| --- | --- | --- | --- | --- |
+| [Windows-WSL-飞书群聊入门](./doc/怎么安装openclaw/Windows-WSL-飞书群聊入门.md) | 有 | 本地 | 中 | 飞书 |
+| [Windows WSL2 + GLM API 接入 OpenClaw](./doc/怎么安装openclaw/Windows%20WSL2%20+%20GLM%20API%20接入%20OpenClaw.md) | 有 | 本地 | 中 | 无 |
+| [openclaw docker配置](./doc/怎么安装openclaw/openclaw%20docker配置.md) | 有 | 本地 | 高 | 飞书 |
+| [clawX安装openclaw（qq、飞书、企微）](./doc/怎么安装openclaw/clawX安装openclaw（qq、飞书、企微）.md) | 有 | 本地 | 中 | QQ / 飞书 / 企业微信 |
+| [Kimi Claw 与本地 OpenClaw 飞书接入教程](./doc/怎么安装openclaw/Kimi%20Claw%20与本地%20OpenClaw%20飞书接入教程.md) | 有 | 本地 / 云均可 | 中 | 飞书 |
+| [LM Studio qwen3.5本地模型接入 OpenClaw](./doc/怎么安装openclaw/LM%20Studio%20%20qwen3.5本地模型接入%20OpenClaw.md) | 有 | 本地 | 中 | 无 |
+| [macos虚拟机隔离安装 OpenClaw](./doc/怎么安装openclaw/macos虚拟机隔离安装%20OpenClaw.md) | 无 | 本地 | 高 | 无 |
+| [Step 3.5 Flash API Key 与 OpenClaw 配置](./doc/怎么安装openclaw/Step%203.5%20Flash%20API%20Key%20与%20OpenClaw%20配置.md) | 有 | 本地 / 云均可 | 中 | 无 |
+| [火山豆包模型接入 OpenClaw](./doc/怎么安装openclaw/火山豆包模型接入%20OpenClaw.md) | 有 | 本地 | 中 | 无 |
+| [火山 Coding Plan 小白配置教程](./doc/怎么安装openclaw/火山%20Coding%20Plan%20小白配置教程.md) | 有 | 本地 | 中 | 无 |
+| [阿里云 Coding Plan 接入 OpenClaw](./doc/怎么安装openclaw/阿里云%20Coding%20Plan%20接入%20OpenClaw.md) | 有 | 本地 | 中 | 无 |
 
-## 项目结构（摘要）
+### 使用 OpenClaw
 
-- [docs/](docs/)：主文档目录（持续维护）
-- [examples/](examples/)：配置、技能、流程示例
-- [docold/](docold/)：历史归档（仅参考）
-- [mkdocs.yml](mkdocs.yml)：文档导航与主题配置
-- [requirements.txt](requirements.txt)：文档站依赖
-- [README.md](README.md)：项目首页说明
+| 模块 | 说明 |
+| --- | --- |
+| [介绍](./doc/介绍.md) | 整体理解这个仓库的阅读路径，以及 OpenClaw 的定位 |
+| [OpenClaw 必做的初始化配置](./doc/怎么使用openclaw/openclaw必做的初始化配置.md) | 理解 `SOUL.md`、`IDENTITY.md`、`USER.md`，先把助手调教成“你的助手” |
+| [ClawHub 指南](./doc/怎么使用openclaw/clawhub指南.md) | 学会怎么搜索、安装、更新和安全使用 Skills |
+| [15个OpenClaw应用场景](./doc/怎么使用openclaw/15个OpenClaw应用场景) | 按场景理解 OpenClaw 的能力组合方式 |
 
-## 贡献方式
+### 应用场景目录
 
-欢迎任何形式的贡献：
+- [01-个人知识库](./doc/怎么使用openclaw/15个OpenClaw应用场景/01-个人知识库.md)
+- [02-定时任务](./doc/怎么使用openclaw/15个OpenClaw应用场景/02-定时任务.md)
+- [03-邮箱管理](./doc/怎么使用openclaw/15个OpenClaw应用场景/03-邮箱管理.md)
+- [04-任务管理](./doc/怎么使用openclaw/15个OpenClaw应用场景/04-任务管理.md)
+- [05-图片、视频生成](./doc/怎么使用openclaw/15个OpenClaw应用场景/05-图片、视频生成.md)
+- [06-日程管理](./doc/怎么使用openclaw/15个OpenClaw应用场景/06-日程管理.md)
+- [07-自媒体文稿撰写](./doc/怎么使用openclaw/15个OpenClaw应用场景/07-自媒体文稿撰写.md)
+- [08-金融助手](./doc/怎么使用openclaw/15个OpenClaw应用场景/08-金融助手.md)
+- [09-代码开发助手](./doc/怎么使用openclaw/15个OpenClaw应用场景/09-代码开发助手.md)
+- [10-浏览器自动化](./doc/怎么使用openclaw/15个OpenClaw应用场景/10-浏览器自动化.md)
+- [11-文件分析和生成（PDF-word-PPT-excel）](./doc/怎么使用openclaw/15个OpenClaw应用场景/11-文件分析和生成（PDF-word-PPT-excel）.md)
+- [12-图表](./doc/怎么使用openclaw/15个OpenClaw应用场景/12-图表.md)
+- [13-动画生成（基于Remotion）](./doc/怎么使用openclaw/15个OpenClaw应用场景/13-动画生成（基于Remotion）.md)
+- [14-新闻汇总](./doc/怎么使用openclaw/15个OpenClaw应用场景/14-新闻汇总.md)
+- [15-论文科研](./doc/怎么使用openclaw/15个OpenClaw应用场景/15-论文科研.md)
+- [16-联网](./doc/怎么使用openclaw/15个OpenClaw应用场景/16-联网.md)
 
-- 报告问题：提交 Issue，附复现步骤与错误日志
-- 修正文档：提交 PR，尽量按“目标 / 前置条件 / 步骤 / 验证 / 常见问题”组织
-- 补充案例：优先提交可复现、可验证、可迁移的实战内容
+---
+
+## 如何学习这份仓库
+
+这套内容更适合这样使用：
+
+1. 先跑通一条主链路，不要一开始就同时折腾模型、IM、Skills、自动化
+2. 先解决“能装、能配、能对话”
+3. 再解决“认主、联网、装技能”
+4. 最后再开始把多个能力组合起来用
+
+如果你是普通用户：
+
+1. 优先看 WSL 或 ClawX
+2. 先接一个稳定模型
+3. 再接飞书或其他 IM
+
+如果你更重视隔离和安全：
+
+1. 优先看 Docker 或虚拟机隔离方案
+2. 尽量把高权限运行环境和主力工作环境分开
+
+---
+
+## 仓库结构
+
+- [doc/](./doc/)：当前主文档目录
+- [doc/怎么安装openclaw/](./doc/怎么安装openclaw/)：安装、模型接入、IM 接入
+- [doc/怎么使用openclaw/](./doc/怎么使用openclaw/)：初始化配置、ClawHub、应用场景
+
+---
+
+## 如何贡献
+
+欢迎继续补充和完善这份中文教程：
+
+- 补充更清晰的安装路径
+- 修正文档中的过期步骤
+- 增加更多 API / 模型 / 平台接入方案
+- 增加新的使用场景和踩坑总结
 
 提交前请注意：
 
-- 示例配置必须脱敏，禁止提交真实密钥、Token、组织信息
-- 涉及版本差异时，请注明 OpenClaw 与 Provider 的最低版本前提
-- 待完成事项可参考 [docs/todo.md](docs/todo.md)
+- 不要提交真实密钥、Token、组织信息
+- 涉及外部平台配置时，尽量写清前置条件和限制
+- 如果某些原始内容在飞书外不可见，不要凭空补造细节
+
+---
 
 ## 开源协议
 
-本项目采用 [Apache 2.0](LICENSE) 协议。
+本项目采用 [Apache 2.0](./LICENSE) 协议。
