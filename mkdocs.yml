@@ -1,7 +1,8 @@
-site_name: OpenClaw Guide
-site_description: OpenClaw 中文教程与实践手册
+site_name: OpenClaw 中文安装与使用手册
+site_description: OpenClaw 中文教程，覆盖安装、初始化、ClawHub 与常用应用场景
 repo_name: Bald0Wang/hand-on-openclaw
 repo_url: https://github.com/Bald0Wang/hand-on-openclaw
+docs_dir: doc
 
 theme:
   name: material
@@ -13,6 +14,9 @@ theme:
     - content.code.copy
     - search.suggest
     - search.highlight
+
+plugins:
+  - search
 
 markdown_extensions:
   - admonition
@@ -26,49 +30,36 @@ markdown_extensions:
 
 nav:
   - 首页: index.md
-  - 待办清单: todo.md
-  - 安装部署:
-      - 安装概览: install/overview.md
-      - macOS 安装: install/macos.md
-      - Windows 安装: install/windows.md
-      - Linux 安装: install/linux.md
-      - 云端部署: install/cloud.md
-      - 故障排查: install/troubleshoot.md
-  - 基础使用:
-      - 第一次对话: basic/first-chat.md
-      - 选择模型:
-          - 总览: basic/choose-model.md
-          - 多模型与 Provider 配置: basic/models/multi-provider.md
-          - 火山方舟（豆包）接入: basic/models/volcengine-doubao.md
-          - 火山 Coding Plan: basic/models/volcengine-coding-plan.md
-          - 阿里云 Coding Plan: basic/models/aliyun-coding-plan.md
-          - LM Studio 本地模型: basic/models/local-lmstudio.md
-          - Cherry Studio + Step: basic/models/cherry-step.md
-          - 阿里云教程写作模板: basic/models/aliyun-coding-plan-writing.md
-      - 聊天渠道:
-          - Telegram: basic/channels/telegram.md
-          - 飞书: basic/channels/feishu.md
-          - 钉钉: basic/channels/dingtalk.md
-          - 企业微信: basic/channels/wechat-work.md
-          - Discord: basic/channels/discord.md
-      - Workspace: basic/workspace.md
-      - Memory: basic/memory.md
-  - Skills:
-      - 什么是 Skills: skills/what-are-skills.md
-      - 安装 Skills: skills/install-skills.md
-      - 创建 Skill: skills/create-skill.md
-      - 发布 Skill: skills/publish-skill.md
-      - Skill 示例: skills/skill-examples.md
-  - 自动化工作流:
-      - Cron: automation/cron.md
-      - Heartbeat: automation/heartbeat.md
-      - Webhook: automation/webhook.md
-  - 源码解析:
-      - 整体架构: deep-dive/architecture.md
-      - 源码走读: deep-dive/source-walkthrough.md
-      - 消息流: deep-dive/message-flow.md
-      - 从源码构建: deep-dive/build-from-source.md
-  - 实战项目:
-      - 个人助手: projects/personal-assistant.md
-      - 团队机器人: projects/team-bot.md
-      - 自动化工作流案例: projects/auto-workflow.md
+  - 项目介绍: 介绍.md
+  - 安装 OpenClaw:
+      - Windows-WSL-飞书群聊入门: 怎么安装openclaw/Windows-WSL-飞书群聊入门.md
+      - Windows WSL2 + GLM API 接入 OpenClaw: 怎么安装openclaw/Windows WSL2 + GLM API 接入 OpenClaw.md
+      - OpenClaw Docker 配置: 怎么安装openclaw/openclaw docker配置.md
+      - ClawX 安装 OpenClaw（QQ、飞书、企微）: 怎么安装openclaw/clawX安装openclaw（qq、飞书、企微）.md
+      - Kimi Claw 与本地 OpenClaw 飞书接入教程: 怎么安装openclaw/Kimi Claw 与本地 OpenClaw 飞书接入教程.md
+      - LM Studio qwen3.5 本地模型接入 OpenClaw: 怎么安装openclaw/LM Studio  qwen3.5本地模型接入 OpenClaw.md
+      - macOS 虚拟机隔离安装 OpenClaw: 怎么安装openclaw/macos虚拟机隔离安装 OpenClaw.md
+      - Step 3.5 Flash API Key 与 OpenClaw 配置: 怎么安装openclaw/Step 3.5 Flash API Key 与 OpenClaw 配置.md
+      - 火山豆包模型接入 OpenClaw: 怎么安装openclaw/火山豆包模型接入 OpenClaw.md
+      - 火山 Coding Plan 小白配置教程: 怎么安装openclaw/火山 Coding Plan 小白配置教程.md
+      - 阿里云 Coding Plan 接入 OpenClaw: 怎么安装openclaw/阿里云 Coding Plan 接入 OpenClaw.md
+  - 使用 OpenClaw:
+      - OpenClaw 必做的初始化配置: 怎么使用openclaw/openclaw必做的初始化配置.md
+      - ClawHub 指南: 怎么使用openclaw/clawhub指南.md
+      - 应用场景:
+          - 01 个人知识库: 怎么使用openclaw/15个OpenClaw应用场景/01-个人知识库.md
+          - 02 定时任务: 怎么使用openclaw/15个OpenClaw应用场景/02-定时任务.md
+          - 03 邮箱管理: 怎么使用openclaw/15个OpenClaw应用场景/03-邮箱管理.md
+          - 04 任务管理: 怎么使用openclaw/15个OpenClaw应用场景/04-任务管理.md
+          - 05 图片、视频生成: 怎么使用openclaw/15个OpenClaw应用场景/05-图片、视频生成.md
+          - 06 日程管理: 怎么使用openclaw/15个OpenClaw应用场景/06-日程管理.md
+          - 07 自媒体文稿撰写: 怎么使用openclaw/15个OpenClaw应用场景/07-自媒体文稿撰写.md
+          - 08 金融助手: 怎么使用openclaw/15个OpenClaw应用场景/08-金融助手.md
+          - 09 代码开发助手: 怎么使用openclaw/15个OpenClaw应用场景/09-代码开发助手.md
+          - 10 浏览器自动化: 怎么使用openclaw/15个OpenClaw应用场景/10-浏览器自动化.md
+          - 11 文件分析和生成: 怎么使用openclaw/15个OpenClaw应用场景/11-文件分析和生成（PDF-word-PPT-excel）.md
+          - 12 图表: 怎么使用openclaw/15个OpenClaw应用场景/12-图表.md
+          - 13 动画生成（基于 Remotion）: 怎么使用openclaw/15个OpenClaw应用场景/13-动画生成（基于Remotion）.md
+          - 14 新闻汇总: 怎么使用openclaw/15个OpenClaw应用场景/14-新闻汇总.md
+          - 15 论文科研: 怎么使用openclaw/15个OpenClaw应用场景/15-论文科研.md
+          - 16 联网: 怎么使用openclaw/15个OpenClaw应用场景/16-联网.md
