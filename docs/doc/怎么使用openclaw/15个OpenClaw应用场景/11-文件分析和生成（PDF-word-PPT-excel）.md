@@ -1,5 +1,7 @@
 # 11. 文件分析和生成（PDF/word/PPT/excel）
 
+教程基于 [clawX安装openclaw（qq、飞书、企微、微信）](../../怎么安装openclaw/clawX安装openclaw（qq、飞书、企微、微信）.md) 进行配置实现，如需复刻可以先学习该内容后再来尝试~
+
 下面这个技能包是pdf、word、ppt、excel的技能包，你可以丢给虾然后让他安装这四个技能即可。这个技能包貌似是clawx自带的？忘记哪里来的了。😂
 
 暂时无法在飞书文档外展示此内容

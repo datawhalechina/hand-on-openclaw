@@ -1,5 +1,7 @@
 # 13. 动画生成（基于Remotion）
 
+教程基于 [clawX安装openclaw（qq、飞书、企微、微信）](../../怎么安装openclaw/clawX安装openclaw（qq、飞书、企微、微信）.md) 进行配置实现，如需复刻可以先学习该内容后再来尝试~
+
 今天我们来用大名鼎鼎的remotion做做动画视频~做教程必备哦
 
 我们来简单了解一下remotion：
