@@ -69,15 +69,15 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | [clawX安装openclaw（qq、飞书、企微、微信）](./docs/doc/怎么安装openclaw/clawX安装openclaw（qq、飞书、企微、微信）.md) | ★★★★★ | Windows | 有 | 本地 | 中 | QQ / 飞书 / 企业微信 / 微信 |
 | [Windows-WSL-飞书群聊入门](./docs/doc/怎么安装openclaw/Windows-WSL-飞书群聊入门.md) | ★★★★☆ | Windows | 有 | 本地 | 中 | 飞书 |
-| [Kimi Claw 与本地 OpenClaw 飞书接入教程](./docs/doc/怎么安装openclaw/Kimi Claw 与本地 OpenClaw 飞书接入教程.md) | ★★★★☆ | Windows / macOS / 云端 | 有 | 本地 / 云均可 | 中 | 飞书 |
-| [Windows WSL2 + GLM API 接入 OpenClaw](./docs/doc/怎么安装openclaw/Windows WSL2 + GLM API 接入 OpenClaw.md) | ★★★★☆ | Windows | 有 | 本地 | 中 | 无 |
-| [LM Studio qwen3.5本地模型接入 OpenClaw](./docs/doc/怎么安装openclaw/LM Studio  qwen3.5本地模型接入 OpenClaw.md) | ★★★★☆ | Windows | 有 | 本地 | 中 | 无 |
-| [openclaw docker配置](./docs/doc/怎么安装openclaw/openclaw docker配置.md) | ★★★☆☆ | Windows / macOS / Linux | 有 | 本地 | 高 | 飞书 |
-| [Step 3.5 Flash API Key 与 OpenClaw 配置](./docs/doc/怎么安装openclaw/Step 3.5 Flash API Key 与 OpenClaw 配置.md) | ★★★☆☆ | Windows / macOS / Linux / 云端 | 有 | 本地 / 云均可 | 中 | 无 |
-| [火山豆包模型接入 OpenClaw](./docs/doc/怎么安装openclaw/火山豆包模型接入 OpenClaw.md) | ★★★☆☆ | Windows / macOS / Linux | 有 | 本地 | 中 | 无 |
-| [火山 Coding Plan 小白配置教程](./docs/doc/怎么安装openclaw/火山 Coding Plan 小白配置教程.md) | ★★★☆☆ | Windows / macOS | 有 | 本地 | 中 | 无 |
-| [阿里云 Coding Plan 接入 OpenClaw](./docs/doc/怎么安装openclaw/阿里云 Coding Plan 接入 OpenClaw.md) | ★★★☆☆ | Windows / macOS / Linux | 有 | 本地 | 中 | 无 |
-| [macos虚拟机隔离安装 OpenClaw](./docs/doc/怎么安装openclaw/macos虚拟机隔离安装 OpenClaw.md) | ★★☆☆☆ | macOS | 无 | 本地 | 高 | 无 |
+| [Kimi Claw 与本地 OpenClaw 飞书接入教程](./docs/doc/怎么安装openclaw/Kimi%20Claw%20与本地%20OpenClaw%20飞书接入教程.md) | ★★★★☆ | Windows / macOS / 云端 | 有 | 本地 / 云均可 | 中 | 飞书 |
+| [Windows WSL2 + GLM API 接入 OpenClaw](./docs/doc/怎么安装openclaw/Windows%20WSL2%20%2B%20GLM%20API%20接入%20OpenClaw.md) | ★★★★☆ | Windows | 有 | 本地 | 中 | 无 |
+| [LM Studio qwen3.5本地模型接入 OpenClaw](./docs/doc/怎么安装openclaw/LM%20Studio%20%20qwen3.5本地模型接入%20OpenClaw.md) | ★★★★☆ | Windows | 有 | 本地 | 中 | 无 |
+| [openclaw docker配置](./docs/doc/怎么安装openclaw/openclaw%20docker配置.md) | ★★★☆☆ | Windows / macOS / Linux | 有 | 本地 | 高 | 飞书 |
+| [Step 3.5 Flash API Key 与 OpenClaw 配置](./docs/doc/怎么安装openclaw/Step%203.5%20Flash%20API%20Key%20与%20OpenClaw%20配置.md) | ★★★☆☆ | Windows / macOS / Linux / 云端 | 有 | 本地 / 云均可 | 中 | 无 |
+| [火山豆包模型接入 OpenClaw](./docs/doc/怎么安装openclaw/火山豆包模型接入%20OpenClaw.md) | ★★★☆☆ | Windows / macOS / Linux | 有 | 本地 | 中 | 无 |
+| [火山 Coding Plan 小白配置教程](./docs/doc/怎么安装openclaw/火山%20Coding%20Plan%20小白配置教程.md) | ★★★☆☆ | Windows / macOS | 有 | 本地 | 中 | 无 |
+| [阿里云 Coding Plan 接入 OpenClaw](./docs/doc/怎么安装openclaw/阿里云%20Coding%20Plan%20接入%20OpenClaw.md) | ★★★☆☆ | Windows / macOS / Linux | 有 | 本地 | 中 | 无 |
+| [macos虚拟机隔离安装 OpenClaw](./docs/doc/怎么安装openclaw/macos虚拟机隔离安装%20OpenClaw.md) | ★★☆☆☆ | macOS | 无 | 本地 | 高 | 无 |
 
 ### 使用 OpenClaw
 
