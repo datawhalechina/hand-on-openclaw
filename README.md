@@ -25,7 +25,7 @@
 
 总入口：
 
-- [介绍](./doc/介绍.md)
+- [介绍](./docs/doc/介绍.md)
 
 ---
 
@@ -33,12 +33,12 @@
 
 如果你是第一次接触 OpenClaw，建议按下面顺序阅读：
 
-1. 先看 [介绍](./doc/介绍.md)
+1. 先看 [介绍](./docs/doc/介绍.md)
 2. 安装路线优先选：
-   - [Windows-WSL-飞书群聊入门](./doc/怎么安装openclaw/Windows-WSL-飞书群聊入门.md)
-   - 或 [clawX安装openclaw（qq、飞书、企微、微信）](./doc/怎么安装openclaw/clawX安装openclaw（qq、飞书、企微、微信）.md)
-3. 安装完成后先看 [OpenClaw 必做的初始化配置](./doc/怎么使用openclaw/openclaw必做的初始化配置.md)
-4. 再继续看 [ClawHub 指南](./doc/怎么使用openclaw/clawhub指南.md) 和 [应用场景目录](./doc/怎么使用openclaw/15个OpenClaw应用场景)
+   - [Windows-WSL-飞书群聊入门](./docs/doc/怎么安装openclaw/Windows-WSL-飞书群聊入门.md)
+   - 或 [clawX安装openclaw（qq、飞书、企微、微信）](./docs/doc/怎么安装openclaw/clawX安装openclaw（qq、飞书、企微、微信）.md)
+3. 安装完成后先看 [OpenClaw 必做的初始化配置](./docs/doc/怎么使用openclaw/openclaw必做的初始化配置.md)
+4. 再继续看 [ClawHub 指南](./docs/doc/怎么使用openclaw/clawhub指南.md) 和 [应用场景目录](./docs/doc/怎么使用openclaw/15个OpenClaw应用场景)
 
 ---
 
@@ -60,51 +60,52 @@
 下面这张表把当前安装教程按几个维度做了标注：
 
 - `API配置`：是否包含模型或平台 API 配置
+- `推荐度`：面向新手上手的主观建议，五星最高
 - `环境`：偏本地、云，还是两者都能参考
 - `安全性`：仅作为上手层面的相对建议，不代表严格安全审计结论
 - `IM接入`：是否包含 QQ / 飞书 / 企业微信 / 微信等接入内容
 
-| 教程 | 适用的操作系统 | API配置 | 环境 | 安全性 | IM接入 |
-| --- | --- | --- | --- | --- | --- |
-| [Windows-WSL-飞书群聊入门](./doc/怎么安装openclaw/Windows-WSL-飞书群聊入门.md) | Windows | 有 | 本地 | 中 | 飞书 |
-| [Windows WSL2 + GLM API 接入 OpenClaw](./doc/怎么安装openclaw/Windows%20WSL2%20+%20GLM%20API%20接入%20OpenClaw.md) | Windows | 有 | 本地 | 中 | 无 |
-| [openclaw docker配置](./doc/怎么安装openclaw/openclaw%20docker配置.md) | Windows / macOS / Linux | 有 | 本地 | 高 | 飞书 |
-| [clawX安装openclaw（qq、飞书、企微、微信）](./doc/怎么安装openclaw/clawX安装openclaw（qq、飞书、企微、微信）.md) | Windows | 有 | 本地 | 中 | QQ / 飞书 / 企业微信 / 微信 |
-| [Kimi Claw 与本地 OpenClaw 飞书接入教程](./doc/怎么安装openclaw/Kimi%20Claw%20与本地%20OpenClaw%20飞书接入教程.md) | Windows / macOS / 云端 | 有 | 本地 / 云均可 | 中 | 飞书 |
-| [LM Studio qwen3.5本地模型接入 OpenClaw](./doc/怎么安装openclaw/LM%20Studio%20%20qwen3.5本地模型接入%20OpenClaw.md) | Windows | 有 | 本地 | 中 | 无 |
-| [macos虚拟机隔离安装 OpenClaw](./doc/怎么安装openclaw/macos虚拟机隔离安装%20OpenClaw.md) | macOS | 无 | 本地 | 高 | 无 |
-| [Step 3.5 Flash API Key 与 OpenClaw 配置](./doc/怎么安装openclaw/Step%203.5%20Flash%20API%20Key%20与%20OpenClaw%20配置.md) | Windows / macOS / Linux / 云端 | 有 | 本地 / 云均可 | 中 | 无 |
-| [火山豆包模型接入 OpenClaw](./doc/怎么安装openclaw/火山豆包模型接入%20OpenClaw.md) | Windows / macOS / Linux | 有 | 本地 | 中 | 无 |
-| [火山 Coding Plan 小白配置教程](./doc/怎么安装openclaw/火山%20Coding%20Plan%20小白配置教程.md) | Windows / macOS | 有 | 本地 | 中 | 无 |
-| [阿里云 Coding Plan 接入 OpenClaw](./doc/怎么安装openclaw/阿里云%20Coding%20Plan%20接入%20OpenClaw.md) | Windows / macOS / Linux | 有 | 本地 | 中 | 无 |
+| 教程 | 推荐度 | 适用的操作系统 | API配置 | 环境 | 安全性 | IM接入 |
+| --- | --- | --- | --- | --- | --- | --- |
+| [clawX安装openclaw（qq、飞书、企微、微信）](./docs/doc/怎么安装openclaw/clawX安装openclaw（qq、飞书、企微、微信）.md) | ★★★★★ | Windows | 有 | 本地 | 中 | QQ / 飞书 / 企业微信 / 微信 |
+| [Windows-WSL-飞书群聊入门](./docs/doc/怎么安装openclaw/Windows-WSL-飞书群聊入门.md) | ★★★★☆ | Windows | 有 | 本地 | 中 | 飞书 |
+| [Kimi Claw 与本地 OpenClaw 飞书接入教程](./docs/doc/怎么安装openclaw/Kimi Claw 与本地 OpenClaw 飞书接入教程.md) | ★★★★☆ | Windows / macOS / 云端 | 有 | 本地 / 云均可 | 中 | 飞书 |
+| [Windows WSL2 + GLM API 接入 OpenClaw](./docs/doc/怎么安装openclaw/Windows WSL2 + GLM API 接入 OpenClaw.md) | ★★★★☆ | Windows | 有 | 本地 | 中 | 无 |
+| [LM Studio qwen3.5本地模型接入 OpenClaw](./docs/doc/怎么安装openclaw/LM Studio  qwen3.5本地模型接入 OpenClaw.md) | ★★★★☆ | Windows | 有 | 本地 | 中 | 无 |
+| [openclaw docker配置](./docs/doc/怎么安装openclaw/openclaw docker配置.md) | ★★★☆☆ | Windows / macOS / Linux | 有 | 本地 | 高 | 飞书 |
+| [Step 3.5 Flash API Key 与 OpenClaw 配置](./docs/doc/怎么安装openclaw/Step 3.5 Flash API Key 与 OpenClaw 配置.md) | ★★★☆☆ | Windows / macOS / Linux / 云端 | 有 | 本地 / 云均可 | 中 | 无 |
+| [火山豆包模型接入 OpenClaw](./docs/doc/怎么安装openclaw/火山豆包模型接入 OpenClaw.md) | ★★★☆☆ | Windows / macOS / Linux | 有 | 本地 | 中 | 无 |
+| [火山 Coding Plan 小白配置教程](./docs/doc/怎么安装openclaw/火山 Coding Plan 小白配置教程.md) | ★★★☆☆ | Windows / macOS | 有 | 本地 | 中 | 无 |
+| [阿里云 Coding Plan 接入 OpenClaw](./docs/doc/怎么安装openclaw/阿里云 Coding Plan 接入 OpenClaw.md) | ★★★☆☆ | Windows / macOS / Linux | 有 | 本地 | 中 | 无 |
+| [macos虚拟机隔离安装 OpenClaw](./docs/doc/怎么安装openclaw/macos虚拟机隔离安装 OpenClaw.md) | ★★☆☆☆ | macOS | 无 | 本地 | 高 | 无 |
 
 ### 使用 OpenClaw
 
 | 模块 | 说明 |
 | --- | --- |
-| [介绍](./doc/介绍.md) | 整体理解这个仓库的阅读路径，以及 OpenClaw 的定位 |
-| [OpenClaw 必做的初始化配置](./doc/怎么使用openclaw/openclaw必做的初始化配置.md) | 理解 `SOUL.md`、`IDENTITY.md`、`USER.md`，先把助手调教成“你的助手” |
-| [ClawHub 指南](./doc/怎么使用openclaw/clawhub指南.md) | 学会怎么搜索、安装、更新和安全使用 Skills |
-| [15个OpenClaw应用场景](./doc/怎么使用openclaw/15个OpenClaw应用场景) | 按场景理解 OpenClaw 的能力组合方式 |
+| [介绍](./docs/doc/介绍.md) | 整体理解这个仓库的阅读路径，以及 OpenClaw 的定位 |
+| [OpenClaw 必做的初始化配置](./docs/doc/怎么使用openclaw/openclaw必做的初始化配置.md) | 理解 `SOUL.md`、`IDENTITY.md`、`USER.md`，先把助手调教成“你的助手” |
+| [ClawHub 指南](./docs/doc/怎么使用openclaw/clawhub指南.md) | 学会怎么搜索、安装、更新和安全使用 Skills |
+| [15个OpenClaw应用场景](./docs/doc/怎么使用openclaw/15个OpenClaw应用场景) | 按场景理解 OpenClaw 的能力组合方式 |
 
 ### 应用场景目录
 
-- [01-个人知识库](./doc/怎么使用openclaw/15个OpenClaw应用场景/01-个人知识库.md)
-- [02-定时任务](./doc/怎么使用openclaw/15个OpenClaw应用场景/02-定时任务.md)
-- [03-邮箱管理](./doc/怎么使用openclaw/15个OpenClaw应用场景/03-邮箱管理.md)
-- [04-任务管理](./doc/怎么使用openclaw/15个OpenClaw应用场景/04-任务管理.md)
-- [05-图片、视频生成](./doc/怎么使用openclaw/15个OpenClaw应用场景/05-图片、视频生成.md)
-- [06-日程管理](./doc/怎么使用openclaw/15个OpenClaw应用场景/06-日程管理.md)
-- [07-自媒体文稿撰写](./doc/怎么使用openclaw/15个OpenClaw应用场景/07-自媒体文稿撰写.md)
-- [08-金融助手](./doc/怎么使用openclaw/15个OpenClaw应用场景/08-金融助手.md)
-- [09-代码开发助手](./doc/怎么使用openclaw/15个OpenClaw应用场景/09-代码开发助手.md)
-- [10-浏览器自动化](./doc/怎么使用openclaw/15个OpenClaw应用场景/10-浏览器自动化.md)
-- [11-文件分析和生成（PDF-word-PPT-excel）](./doc/怎么使用openclaw/15个OpenClaw应用场景/11-文件分析和生成（PDF-word-PPT-excel）.md)
-- [12-图表](./doc/怎么使用openclaw/15个OpenClaw应用场景/12-图表.md)
-- [13-动画生成（基于Remotion）](./doc/怎么使用openclaw/15个OpenClaw应用场景/13-动画生成（基于Remotion）.md)
-- [14-新闻汇总](./doc/怎么使用openclaw/15个OpenClaw应用场景/14-新闻汇总.md)
-- [15-论文科研](./doc/怎么使用openclaw/15个OpenClaw应用场景/15-论文科研.md)
-- [16-联网](./doc/怎么使用openclaw/15个OpenClaw应用场景/16-联网.md)
+- [01-个人知识库](./docs/doc/怎么使用openclaw/15个OpenClaw应用场景/01-个人知识库.md)
+- [02-定时任务](./docs/doc/怎么使用openclaw/15个OpenClaw应用场景/02-定时任务.md)
+- [03-邮箱管理](./docs/doc/怎么使用openclaw/15个OpenClaw应用场景/03-邮箱管理.md)
+- [04-任务管理](./docs/doc/怎么使用openclaw/15个OpenClaw应用场景/04-任务管理.md)
+- [05-图片、视频生成](./docs/doc/怎么使用openclaw/15个OpenClaw应用场景/05-图片、视频生成.md)
+- [06-日程管理](./docs/doc/怎么使用openclaw/15个OpenClaw应用场景/06-日程管理.md)
+- [07-自媒体文稿撰写](./docs/doc/怎么使用openclaw/15个OpenClaw应用场景/07-自媒体文稿撰写.md)
+- [08-金融助手](./docs/doc/怎么使用openclaw/15个OpenClaw应用场景/08-金融助手.md)
+- [09-代码开发助手](./docs/doc/怎么使用openclaw/15个OpenClaw应用场景/09-代码开发助手.md)
+- [10-浏览器自动化](./docs/doc/怎么使用openclaw/15个OpenClaw应用场景/10-浏览器自动化.md)
+- [11-文件分析和生成（PDF-word-PPT-excel）](./docs/doc/怎么使用openclaw/15个OpenClaw应用场景/11-文件分析和生成（PDF-word-PPT-excel）.md)
+- [12-图表](./docs/doc/怎么使用openclaw/15个OpenClaw应用场景/12-图表.md)
+- [13-动画生成（基于Remotion）](./docs/doc/怎么使用openclaw/15个OpenClaw应用场景/13-动画生成（基于Remotion）.md)
+- [14-新闻汇总](./docs/doc/怎么使用openclaw/15个OpenClaw应用场景/14-新闻汇总.md)
+- [15-论文科研](./docs/doc/怎么使用openclaw/15个OpenClaw应用场景/15-论文科研.md)
+- [16-联网](./docs/doc/怎么使用openclaw/15个OpenClaw应用场景/16-联网.md)
 
 ---
 
@@ -132,9 +133,28 @@
 
 ## 仓库结构
 
-- [doc/](./doc/)：当前主文档目录
-- [doc/怎么安装openclaw/](./doc/怎么安装openclaw/)：安装、模型接入、IM 接入
-- [doc/怎么使用openclaw/](./doc/怎么使用openclaw/)：初始化配置、ClawHub、应用场景
+- [docs/doc/](./docs/doc/)：当前主文档目录
+- [docs/doc/怎么安装openclaw/](./docs/doc/怎么安装openclaw/)：安装、模型接入、IM 接入
+- [docs/doc/怎么使用openclaw/](./docs/doc/怎么使用openclaw/)：初始化配置、ClawHub、应用场景
+- [docs/](./docs/)：用于 GitHub Pages / Docsify 的网页入口目录
+
+---
+
+## 本地预览与部署
+
+如果你想在本地预览这个子项目的网页文档，可以在当前目录执行：
+
+```powershell
+python -m http.server 8080
+```
+
+然后打开：
+
+- `http://localhost:8080/docs/`
+
+如果要部署到 GitHub Pages，推荐直接使用仓库分支目录发布：
+
+`Settings → Pages → Deploy from a branch → Branch: main → Folder: /docs`
 
 ---
 
