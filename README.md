@@ -36,7 +36,7 @@
 1. 先看 [介绍](./doc/介绍.md)
 2. 安装路线优先选：
    - [Windows-WSL-飞书群聊入门](./doc/怎么安装openclaw/Windows-WSL-飞书群聊入门.md)
-   - 或 [clawX安装openclaw（qq、飞书、企微）](./doc/怎么安装openclaw/clawX安装openclaw（qq、飞书、企微）.md)
+   - 或 [clawX安装openclaw（qq、飞书、企微、微信）](./doc/怎么安装openclaw/clawX安装openclaw（qq、飞书、企微、微信）.md)
 3. 安装完成后先看 [OpenClaw 必做的初始化配置](./doc/怎么使用openclaw/openclaw必做的初始化配置.md)
 4. 再继续看 [ClawHub 指南](./doc/怎么使用openclaw/clawhub指南.md) 和 [应用场景目录](./doc/怎么使用openclaw/15个OpenClaw应用场景)
 
@@ -47,7 +47,7 @@
 - 理解 OpenClaw 到底适合拿来做什么，而不只是把它当成另一个聊天工具
 - 了解 Windows、WSL、Docker、第三方平台几种典型安装路线的差异
 - 学会把常见模型和 API 接入 OpenClaw
-- 能把 OpenClaw 接到飞书、QQ、企业微信等 IM 平台
+- 能把 OpenClaw 接到飞书、QQ、企业微信、微信等 IM 平台
 - 理解 `SOUL.md`、`IDENTITY.md`、`USER.md`、ClawHub、Skills、工作区这些概念在实际使用里的作用
 - 通过一组应用场景看懂 OpenClaw 的“连接器 / 胶水层”逻辑
 
@@ -62,14 +62,14 @@
 - `API配置`：是否包含模型或平台 API 配置
 - `环境`：偏本地、云，还是两者都能参考
 - `安全性`：仅作为上手层面的相对建议，不代表严格安全审计结论
-- `IM接入`：是否包含 QQ / 飞书 / 企业微信等接入内容
+- `IM接入`：是否包含 QQ / 飞书 / 企业微信 / 微信等接入内容
 
 | 教程 | 适用的操作系统 | API配置 | 环境 | 安全性 | IM接入 |
 | --- | --- | --- | --- | --- | --- |
 | [Windows-WSL-飞书群聊入门](./doc/怎么安装openclaw/Windows-WSL-飞书群聊入门.md) | Windows | 有 | 本地 | 中 | 飞书 |
 | [Windows WSL2 + GLM API 接入 OpenClaw](./doc/怎么安装openclaw/Windows%20WSL2%20+%20GLM%20API%20接入%20OpenClaw.md) | Windows | 有 | 本地 | 中 | 无 |
 | [openclaw docker配置](./doc/怎么安装openclaw/openclaw%20docker配置.md) | Windows / macOS / Linux | 有 | 本地 | 高 | 飞书 |
-| [clawX安装openclaw（qq、飞书、企微）](./doc/怎么安装openclaw/clawX安装openclaw（qq、飞书、企微）.md) | Windows | 有 | 本地 | 中 | QQ / 飞书 / 企业微信 |
+| [clawX安装openclaw（qq、飞书、企微、微信）](./doc/怎么安装openclaw/clawX安装openclaw（qq、飞书、企微、微信）.md) | Windows | 有 | 本地 | 中 | QQ / 飞书 / 企业微信 / 微信 |
 | [Kimi Claw 与本地 OpenClaw 飞书接入教程](./doc/怎么安装openclaw/Kimi%20Claw%20与本地%20OpenClaw%20飞书接入教程.md) | Windows / macOS / 云端 | 有 | 本地 / 云均可 | 中 | 飞书 |
 | [LM Studio qwen3.5本地模型接入 OpenClaw](./doc/怎么安装openclaw/LM%20Studio%20%20qwen3.5本地模型接入%20OpenClaw.md) | Windows | 有 | 本地 | 中 | 无 |
 | [macos虚拟机隔离安装 OpenClaw](./doc/怎么安装openclaw/macos虚拟机隔离安装%20OpenClaw.md) | macOS | 无 | 本地 | 高 | 无 |
@@ -151,7 +151,6 @@
 
 - 不要提交真实密钥、Token、组织信息
 - 涉及外部平台配置时，尽量写清前置条件和限制
-- 如果某些原始内容在飞书外不可见，不要凭空补造细节
 
 ---
 

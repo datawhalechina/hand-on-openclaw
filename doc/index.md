@@ -20,7 +20,7 @@
 ### 第二步：安装 OpenClaw
 
 - [Windows-WSL-飞书群聊入门](怎么安装openclaw/Windows-WSL-飞书群聊入门.md)
-- [ClawX 安装 OpenClaw（QQ、飞书、企微）](怎么安装openclaw/clawX安装openclaw（qq、飞书、企微）.md)
+- [ClawX 安装 OpenClaw（QQ、飞书、企微、微信）](怎么安装openclaw/clawX安装openclaw（qq、飞书、企微、微信）.md)
 - [OpenClaw Docker 配置](怎么安装openclaw/openclaw%20docker配置.md)
 
 ### 第三步：初始化与技能
@@ -36,7 +36,7 @@
 
 - Windows / WSL / Docker / 第三方平台安装
 - 常见 API 与模型接入
-- 飞书、QQ、企业微信等 IM 接入
+- 飞书、QQ、企业微信、微信等 IM 接入
 - `SOUL.md`、`IDENTITY.md`、`USER.md` 初始化配置
 - ClawHub 与 Skills 安装使用
 - 一组常用的 OpenClaw 应用场景
